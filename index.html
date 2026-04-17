@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juventude Sem Bullying — Transformando escolas em espaços de paz</title>
-  <meta name="description" content="Portal Juventude Sem Bullying: ouvidoria escolar, notícias, orientação e prevenção conforme a Lei nº 14.811/2024.">
+  <title>Projeto REACT — Transformando escolas em espaços de paz</title>
+  <meta name="description" content="Portal Projeto REACT: ouvidoria escolar, notícias, orientação e prevenção conforme a Lei nº 14.811/2024.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
@@ -14,10 +14,11 @@
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="#inicio" class="nav-logo">
-        <span class="logo-icon">🛡️</span>
-        <span class="logo-text">Juventude <strong>Sem Bullying</strong></span>
+        <img src="assets/logo-projeto.png" alt="Logo do projeto" class="logo-project-image" loading="eager" decoding="async">
+        <span class="logo-text">Projeto <strong>REACT</strong></span>
         <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" alt="Bandeira do Brasil" class="logo-flag js-lang-ptbr" title="Mudar idioma para Português (Brasil)" role="button" tabindex="0" loading="eager" decoding="async">
         <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Bandeira dos Estados Unidos" class="logo-flag js-lang-enus" title="Switch language to English (US)" role="button" tabindex="0" loading="eager" decoding="async">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Bandera de España" class="logo-flag js-lang-eses" title="Cambiar idioma a Español (España)" role="button" tabindex="0" loading="eager" decoding="async">
       </a>
 
       <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
@@ -25,10 +26,10 @@
       </button>
 
       <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Página Inicial</a></li>
         <li><a href="#noticias">Notícias</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#dados">Dados</a></li>
         <li><a href="conheca-o-projeto.html">Conheça o Projeto</a></li>
+        <li><a href="#dados">Dados</a></li>
         <li><a href="ouvidoria.html" class="nav-cta">Ouvidoria</a></li>
         <li><a href="ouvidoria.html?admin=1" class="nav-admin-cta" target="_blank" rel="noopener noreferrer">🔐 Login Administrativo</a></li>
       </ul>
@@ -38,6 +39,7 @@
   <header class="hero" id="inicio">
     <canvas id="heroParticles" class="hero-particles" aria-hidden="true"></canvas>
     <div class="hero-bg-shapes" aria-hidden="true">
+      <img src="assets/logo-projeto.png" alt="" class="hero-logo-bg" loading="lazy" decoding="async">
       <div class="shape shape-1"></div>
       <div class="shape shape-2"></div>
       <div class="shape shape-3"></div>
@@ -47,15 +49,15 @@
     <div class="container hero-content">
       <div class="hero-badge">Programa Nacional de Prevenção</div>
       <h1 class="hero-title">
-        <span class="hero-highlight">Juventude</span>
-        <span class="hero-sem">Sem</span>
-        <span class="hero-highlight">Bullying</span>
+        <span class="hero-project">Projeto</span>
+        <span class="hero-react">REACT</span>
       </h1>
+      <p class="hero-under-title">Juventude Contra o Bullyng</p>
       <p class="hero-subtitle">Transformando escolas em espaços de paz, segurança e justiça</p>
       <p class="hero-desc">Educação, tecnologia e apoio jurídico contra o bullying, conforme a <strong>Lei nº 14.811/2024</strong>.</p>
 
       <div class="hero-actions">
-        <a href="ouvidoria.html" class="btn btn-primary btn-lg"><span>🏫</span> Ouvidoria Escolar</a>
+        <a href="file:///Users/alinecristianedemenezes/Documents/site-juventude-sem-limites-site/ouvidoria.html" class="btn btn-primary btn-lg">Ouvidoria Escolar</a>
         <a href="conheca-o-projeto.html" class="btn btn-outline btn-lg">Conheça o Projeto</a>
       </div>
 
@@ -118,33 +120,6 @@
 
       <div class="news-more" id="newsMore" hidden>
         <button type="button" id="loadMoreNews" class="btn btn-outline">Carregar mais notícias</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="sobre">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Nosso propósito</span>
-        <h2 class="section-title">Sobre o projeto</h2>
-        <p class="section-desc">O Juventude Sem Bullying promove informação, prevenção e acolhimento com linguagem acessível para escolas, famílias e estudantes.</p>
-      </div>
-      <div class="about-grid">
-        <article class="about-card">
-          <div class="about-icon">🧠</div>
-          <h3>Conscientização</h3>
-          <p>Conteúdo educativo para reconhecer sinais e agir cedo contra violência escolar.</p>
-        </article>
-        <article class="about-card">
-          <div class="about-icon">🤝</div>
-          <h3>Acolhimento</h3>
-          <p>Canal de ouvidoria para denúncias anônimas ou identificadas com protocolo de acompanhamento.</p>
-        </article>
-        <article class="about-card">
-          <div class="about-icon">⚖️</div>
-          <h3>Base legal</h3>
-          <p>Informações alinhadas à Lei nº 14.811/2024 e boas práticas de proteção à comunidade escolar.</p>
-        </article>
       </div>
     </div>
   </section>
@@ -241,7 +216,7 @@
         <div class="footer-about">
           <div class="footer-logo">
             <span class="logo-icon">🛡️</span>
-            <span>Juventude Sem Bullying</span>
+            <span>Projeto REACT</span>
           </div>
           <p>Educação, acolhimento e proteção no ambiente escolar com apoio da tecnologia.</p>
           <div class="footer-social">
@@ -255,7 +230,6 @@
           <ul>
             <li><a href="#inicio">Início</a></li>
             <li><a href="#noticias">Notícias</a></li>
-            <li><a href="#sobre">Sobre</a></li>
             <li><a href="#dados">Dados</a></li>
           </ul>
         </div>
@@ -274,7 +248,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Juventude Sem Bullying — Todos os direitos reservados.</p>
+        <p>© 2026 Projeto REACT — Todos os direitos reservados.</p>
         <p>Conforme diretrizes da Lei nº 14.811/2024.</p>
       </div>
     </div>
